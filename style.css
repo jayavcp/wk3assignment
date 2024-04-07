@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(138, 233, 119);
+  /* height: 100vh;
+    width: 100vw;
+    position: relative; */
+}
+
+:focus {
+  outline-offset: 0px;
+  outline: 2px solid blue;
+}
+
+#thumb-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 2.5vh;
+  /* position: absolute; */
+  gap: 2px;
+  /* z-index: 10; */
+}
+#thumb-container img {
+  height: 100px;
+  cursor: pointer;
+}
+
+.large-image {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2.5vh;
+
+  /* position: absolute; */
+}
+
+.large-image img {
+  height: 60vh;
+  width: auto;
+}
+
+footer {
+  text-align: center;
+}

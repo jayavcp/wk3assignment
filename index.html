@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="Image Gallery"
+      content="This page is an accessible image gallery"
+    />
+    <script src="./app.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Gallery Demo</title>
+  </head>
+  <body>
+    <header>
+      <div id="thumb-container" class="thumb-container"></div>
+      <button
+        id="thumbHide"
+        class="thumb-container thumbHide"
+        aria-label="Close the thumbnail gallery"
+      >
+        --
+      </button>
+    </header>
+    <main>
+      <div class="large-image" id="display"></div>
+      <!-- adding in a text area for comments -->
+      <!-- <textarea
+        cols="20"
+        rows="10"
+        placeholder="Enter your comments here"
+        aria-placeholder="Enter your comments here"
+      ></textarea> -->
+    </main>
+    <footer>
+      <!-- <input
+        type="text"
+        placeholder="Write comments here"
+        aria-placeholder="Comments box"
+      /> -->
+      <form id="comment-form">
+        <label for="username">Name:</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          aria-placeholder="Enter name here"
+        />
+        <label for="comment">Comment:</label>
+        <textarea
+          id="comment"
+          name="comment"
+          placeholder="Enter your comments here"
+          aria-placeholder="Enter your comments here"
+          required
+        ></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <p>Copyright &copy; 2024 Jaya's fancy slideshow</p>
+    </footer>
+  </body>
+</html>
