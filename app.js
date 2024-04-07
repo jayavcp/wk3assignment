@@ -10,7 +10,7 @@ const images = [
     url: "./cookie_argentina.jpg",
     alt: "Biscuits from Argentina called alfajores",
     title: "alfajores",
-    arialabel: "Biscuits from Argentina called alfajores",
+    arialabel: "Biscuits from Argentina called alfa jaw res",
   },
   {
     url: "./cookie_france.jpg",
@@ -23,7 +23,7 @@ const images = [
     url: "./cookie_sicily.jpg",
     alt: "Biscuits from Sicily called pasticcine di mandorle",
     title: "pasticcine di mandorle",
-    arialabel: "Biscuits from Sicily called pasty chee nee di mandorlay",
+    arialabel: "Biscuits from Sicily called pasty chee nee dee mandorlay",
   },
 
   {
@@ -31,6 +31,13 @@ const images = [
     alt: "Biscuits from India called nankhatai",
     title: "nankhatai",
     arialabel: "Biscuits from India called nankhatai",
+  },
+
+  {
+    url: "./cookie_nigeria.jpg",
+    alt: "Fried dough from Nigeria called puff puff",
+    title: "puff puff",
+    arialabel: "Fried dough from Nigeria called puff puff",
   },
 ];
 
@@ -53,9 +60,10 @@ function createThumbnails() {
       createBigImage(image);
     });
 
-    // img.addEventListener("focus", function(){
-
-    // })
+    // when I focus and click enter the large version populates
+    img.addEventListener("keydown", function (event) {
+      if (event.key === "Enter") createBigImage(image);
+    });
   });
 }
 //display the large image

@@ -12,32 +12,26 @@
     <title>Gallery Demo</title>
   </head>
   <body>
-    <header>
-      <div id="thumb-container" class="thumb-container"></div>
-      <button
-        id="thumbHide"
-        class="thumb-container thumbHide"
-        aria-label="Close the thumbnail gallery"
-      >
-        --
-      </button>
-    </header>
+    <!-- <header> -->
+    <div id="thumb-container" class="thumb-container"></div>
+    <button
+      id="thumbHide"
+      class="thumb-container thumbHide"
+      aria-label="Close the thumbnail gallery"
+    >
+      --
+    </button>
+    <!-- </header> -->
     <main>
       <div class="large-image" id="display"></div>
-      <!-- adding in a text area for comments -->
-      <!-- <textarea
-        cols="20"
-        rows="10"
-        placeholder="Enter your comments here"
-        aria-placeholder="Enter your comments here"
-      ></textarea> -->
+      <button id="next" aria-label="Go to the next image">
+        <strong>></strong>
+      </button>
+      <button id="prev" aria-label="Go to the previous image">
+        <strong><</strong>
+      </button>
     </main>
     <footer>
-      <!-- <input
-        type="text"
-        placeholder="Write comments here"
-        aria-placeholder="Comments box"
-      /> -->
       <form id="comment-form">
         <label for="username">Name:</label>
         <input
