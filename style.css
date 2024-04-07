@@ -51,6 +51,12 @@ button#prev {
   cursor: pointer;
 }
 
+@media (width <= 400px) {
+  #thumb-container img {
+    width: 40%;
+  }
+}
+
 .large-image {
   display: flex;
   justify-content: center;
